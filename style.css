@@ -5,7 +5,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:sans-se
   font-weight: 500;
   font-style: normal;
   font-display: auto;
-}
+} 
 @font-face {
   font-family: 'Graphik';
   src: url('https://assets.website-files.com/5e593fb060cf87bbaf75dd20/5e593fb060cf877df875de0f_Graphik-MediumItalic-Web.woff2') format('woff2'), url('https://assets.website-files.com/5e593fb060cf87bbaf75dd20/5e593fb060cf87124075de24_Graphik-MediumItalic-Web.eot') format('embedded-opentype'), url('https://assets.website-files.com/5e593fb060cf87bbaf75dd20/5e593fb060cf87842e75de1d_Graphik-MediumItalic-Web.woff') format('woff');
