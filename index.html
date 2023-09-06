@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/hoangthong98/css/main/Slack.ico">
+  <title>Power Control Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Power Control Hub</h1>
+  </header>
+  <div class="container">
+    <div class="button-container">
+	  <p><strong>Timer: <span id="timerStatus">OFF</span></strong></p>
+      <button class="btn" onclick="toggleRelay1()">RELAY 1</button>
+      <button class="btn" onclick="toggleRelay2()">RELAY 2</button>
+      <button class="btn" onclick="toggleRelay3()">RELAY 3</button>
+      <button class="btn" onclick="toggleRelay4()">RELAY 4</button>
+      <button class="btn" onclick="toggleRelay5()">RELAY 5</button>
+    </div>
+    <p class="state"><strong>RELAY 1:</strong> <span id="relay1State"></span></p>
+    <p class="state"><strong>RELAY 2:</strong> <span id="relay2State"></span></p>
+    <p class="state"><strong>RELAY 3:</strong> <span id="relay3State"></span></p>
+    <p class="state"><strong>RELAY 4:</strong> <span id="relay4State"></span></p>
+    <p class="state"><strong>RELAY 5:</strong> <span id="relay5State"></span></p>
+    <p style="color: blue;"><strong>Current value: </strong><span class="value" id="currentValue"></span> <strong>A</strong></p>
+    <p style="color: red;"><strong>Voltage value: </strong><span class="value" id="voltageValue"></span> <strong>V</strong></p>
+  </div>
+  
+  <div class="container1">
+    <div class="timer-container">
+	  <div id="clock" class="custom-clock">00:00:00</div>
+      <label for="timer"><strong>Set Timer:</strong></label>
+      <input type="time" id="timer" class="custom-timer-input">
+	  <select id="relaySelector" class="custom-relay-select">
+		  <option value="1">RELAY 1</option>
+		  <option value="2">RELAY 2</option>
+		  <option value="3">RELAY 3</option>
+		  <option value="4">RELAY 4</option>
+		  <option value="5">RELAY 5</option>
+      </select>
+      <button class="btn1" onclick="setTimer()">Set Timer</button>
+    </div>
+  </div>
+  
+  <div class="container2">
+    <div class="button-container">
+	  <button class="btn" onclick="navigateToOTA()">OTA Upload</button>
+    </div> 
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 PowerControlHub</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
